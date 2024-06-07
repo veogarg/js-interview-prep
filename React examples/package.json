@@ -1,0 +1,23 @@
+{
+  "name": "react-examples",
+  "version": "1.0.0",
+  "description": "For react practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "parcel public/index.html",
+    "build": "parcel public/index.html"
+  },
+  "author": "vikas garg",
+  "license": "ISC",
+  "dependencies": {
+    "firebase": "^10.9.0",
+    "parcel": "^2.11.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.23.1"
+  },
+  "devDependencies": {
+    "process": "^0.11.10"
+  }
+}
