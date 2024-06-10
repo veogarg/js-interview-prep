@@ -1,6 +1,8 @@
 import Carousel from "./screens/Carousel";
 import Counter from "./screens/Counter";
 import InfiniteScoll from "./screens/InfiniteScroll";
+import SearchingInput from "./screens/Searching";
+import Theme from "./screens/ThemeContext";
 import TicTacToe from "./screens/TicTacToe";
 import TrafficSignal from "./screens/TrafficLight";
 import TypingTest from "./screens/TypingTest";
@@ -41,6 +43,18 @@ const routes = [
         label: "Typing Test",
         path: "/typing-test",
         component: (props) => <TypingTest {...props} />
+    },
+    {
+        id: "searchUsers",
+        label: "Search Users",
+        path: "/search-users",
+        component: (props) => <SearchingInput {...props} />
+    },
+    {
+        id: "themContext",
+        label: "Theme Context",
+        path: "/theme-context",
+        component: (props) => <Theme {...props} />
     },
 ]
 
