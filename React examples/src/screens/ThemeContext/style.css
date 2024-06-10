@@ -1,0 +1,17 @@
+button.light-theme{
+    color: #32312c;
+    background-color: #ff0058;
+    padding: 15px;
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+button.dark-theme {
+    color: #ff0058;
+    background-color: #32312c;
+    padding: 15px;
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+}

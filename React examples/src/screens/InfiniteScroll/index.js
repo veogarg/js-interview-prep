@@ -1,4 +1,4 @@
-import { useState, useMemo, useEffect, useRef } from "react";
+import { useState, useMemo, useEffect, useRef, useCallback } from "react";
 import useFetch from "../../hooks/useFetch";
 import Posts from "./Posts";
 
@@ -10,6 +10,7 @@ function InfiniteScoll() {
     error,
     loading: loader,
   } = useFetch("https://jsonplaceholder.typicode.com/posts");
+
   const [currentPosts, setCurrentPosts] = useState([])
   const [page, setPage] = useState(1);
   const [loadingPosts, setLoadingPosts] = useState(false)
@@ -39,7 +40,7 @@ function InfiniteScoll() {
     };
 }, [lastElement]);
 
-const loadPosts = () => {
+const loadPosts = useCallback(() => {
   if(postsList) {
     setLoadingPosts(true)
     const newPosts = postsList.slice(0, page*postsPerPage)
@@ -50,7 +51,7 @@ const loadPosts = () => {
       }, 1000);
     }
   }
-}
+}, [postsList, setLoadingPosts, setCurrentPosts, page])
 
 const totalPage = useMemo(() => {
   if( postsList?.length) {
@@ -58,7 +59,7 @@ const totalPage = useMemo(() => {
       return Math.ceil(postsList.length/postsPerPage)
   }
   return 1
-}, [postsList])
+}, [postsList, loadPosts])
 
   if (loader) {
     return <div>Loading...</div>;
