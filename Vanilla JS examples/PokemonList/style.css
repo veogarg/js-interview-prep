@@ -1,0 +1,17 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+}
+
+.poke-app {
+    margin: 20px;
+}
+
+select#poke-select {
+    padding: 10px 0;
+    font-size: 20px;
+}
+
+.pokemon-details {
+    margin: 20px 0;
+}
