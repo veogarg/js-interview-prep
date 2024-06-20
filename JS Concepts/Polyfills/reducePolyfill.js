@@ -8,7 +8,8 @@ console.log("================");
 Array.prototype.reduceNew = function (callback, initialVal) {
   let total = initialVal;
   for (let i = 0; i < this.length; i++) {
-    total = callback.call(undefined, total, this[i]);
+    // total = total!==undefined ? callback.call(this, total, this[i]) : this[index];
+    total = total!==undefined ? callback.call(undefined, total, this[i]) : this[index]; //  Both will work
   }
   return total;
 };
@@ -17,7 +18,7 @@ console.log("================");
 Array.prototype.myReduce = function (cb, initialVal) {
   let acc = initialVal;
   for (let index = 0; index < this.length; index++) {
-    acc = acc ? cb(acc, this[index]) : this[index];
+    acc = acc!==undefined ? cb(acc, this[index]) : this[index];
   }
   return acc
 };

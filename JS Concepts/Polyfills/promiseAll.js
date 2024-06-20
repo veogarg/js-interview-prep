@@ -6,7 +6,7 @@ const promise1 = new Promise((resolve,reject) => {
 
 const promise2 = new Promise((resolve,reject) => {
     setTimeout(() => {
-        reject("Hi")
+        resolve("Hi")
     }, 100)
 })
 

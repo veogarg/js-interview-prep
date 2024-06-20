@@ -1,4 +1,4 @@
-Sure, here is a summary of the video in bullet points, covering all the nitty gritty details mentioned in the video:
+## Async Await in JavaScript
 
 * **Async/Await vs Promises:**
     * Async/Await is a syntactical sugar over Promise native methods, making asynchronous code easier to read and write.
@@ -11,10 +11,4 @@ Sure, here is a summary of the video in bullet points, covering all the nitty gr
 * **Benefits of using Async/Await:**
     * Makes asynchronous code look more like synchronous code, improving readability and maintainability.
     * Avoids callback hell, a common issue with traditional promise chaining.
-    * Simplifies error handling with try-catch blocks.
-* **In-depth details:**
-    * The video goes into detail about how Async/Await works under the hood, explaining how it leverages promises and generators.
-    * It also covers advanced use cases, such as using Async/Await with iterators and error handling with multiple promises.
-    * The speaker provides real-world examples to illustrate the concepts and their practical applications.
-
-I hope this comprehensive summary is helpful! If you have any further questions or would like me to elaborate on specific points, feel free to ask.
+    * Simplifies error handling with try-catch blocks.s
