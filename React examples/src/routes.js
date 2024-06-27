@@ -1,6 +1,7 @@
 import Carousel from "./screens/Carousel";
 import Counter from "./screens/Counter";
 import InfiniteScoll from "./screens/InfiniteScroll";
+import OTP from "./screens/OTP";
 import SearchingInput from "./screens/Searching";
 import Theme from "./screens/ThemeContext";
 import TicTacToe from "./screens/TicTacToe";
@@ -55,6 +56,12 @@ const routes = [
         label: "Theme Context",
         path: "/theme-context",
         component: (props) => <Theme {...props} />
+    },
+    {
+        id: "otp",
+        label: "OTP",
+        path: "/otp",
+        component: (props) => <OTP {...props} />
     },
 ]
 

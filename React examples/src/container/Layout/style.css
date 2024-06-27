@@ -24,7 +24,7 @@ body{
 .sidebar section {
     display: flex;
     justify-content: center;
-    position: fixed;
+    /* position: fixed; */
     flex-direction: column;
 }
 
@@ -35,6 +35,9 @@ body{
 .sidebar ul {
     list-style: none;
     padding: 0 10px;
+    height: calc(100vh - 150px);
+    overflow-y: scroll;
+    scrollbar-width: thin;
 }
 
 .sidebar ul li {

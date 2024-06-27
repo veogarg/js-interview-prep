@@ -9,7 +9,11 @@ const Root = () => {
     <div className="app-root">
       <aside className="sidebar">
         <section>
-          <Link to="/" style={{alignSelf: "center"}}><img src={logo} height={100} width={100} alt="js logo" /></Link>
+          <Link to="/" style={{ alignSelf: "center" }}>
+            <img src={logo} height={100} width={100} alt="js logo" />
+          </Link>
+        </section>
+        <section>
           <ul>
             {routes.map((route) => {
               return (
