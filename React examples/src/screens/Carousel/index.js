@@ -32,6 +32,13 @@ const Carousel = () => {
       <h1>Carousel</h1>
       <div className="carousel-section">
         <div className="carousel-slides">
+        <div className="progress-bar">
+        {
+          slides.map((_, index) => {
+            return <div className="slider-progress"></div>
+          })
+        }
+        </div>
         <span className="prev" onClick={() => handleSlideChange(-1)}>
           Prev
         </span>

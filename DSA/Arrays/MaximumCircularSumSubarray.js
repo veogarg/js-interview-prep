@@ -1,5 +1,4 @@
 const maxSumNormalSubArray = (arr) => {
-    debugger;
     let res = arr[0];
     let maxSum = arr[0];
     const n = arr.length;
