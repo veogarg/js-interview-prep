@@ -24,5 +24,3 @@ Array.prototype.myReduce = function (cb, initialVal) {
 };
 
 console.log(arr.myReduce((total, elem) => total + elem, 0));
-
-

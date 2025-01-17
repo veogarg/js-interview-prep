@@ -13,15 +13,15 @@ let name1 = {
     lastname: "Garg",
 }
 
+let name2 = {
+    firstName: "Steve",
+    lastname: "Jobs",
+}
+
 name.printName.call(name2) // this will be pointing to name2
 
 function printName(hometown, country){
     console.log(`${this.firstName} ${this.lastname}, from ${hometown}, ${country}`)
-}
-
-let name2 = {
-    firstName: "Steve",
-    lastname: "Jobs",
 }
 
 // function borrowing
