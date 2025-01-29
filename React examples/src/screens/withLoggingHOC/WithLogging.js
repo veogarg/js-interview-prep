@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 
 const withLogging = (Component) => {
     
-    return function withLogging(props) {
+    return function WithLogging(props) {
         useEffect(() => {
             console.log("Mounted");
 

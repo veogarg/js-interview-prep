@@ -3,6 +3,7 @@ import Counter from "./screens/Counter";
 import InfiniteScoll from "./screens/InfiniteScroll";
 import OTP from "./screens/OTP";
 import SearchingInput from "./screens/Searching";
+import SnakeNLadder from "./screens/Snake-N-Ladder";
 import Theme from "./screens/ThemeContext";
 import TicTacToe from "./screens/TicTacToe";
 import TrafficSignal from "./screens/TrafficLight";
@@ -62,6 +63,12 @@ const routes = [
         label: "OTP",
         path: "/otp",
         component: (props) => <OTP {...props} />
+    },
+    {
+        id: "snakeNLadder",
+        label: "Snake-N-Ladder",
+        path: "/snake-n-ladder",
+        component: (props) => <SnakeNLadder {...props} />
     },
 ]
 

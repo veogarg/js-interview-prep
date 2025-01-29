@@ -22,10 +22,10 @@ function moveZeroesToEnd(arr) {
     }
 
     let index = 0;
-    let count = 0
+    let count = 0; // to count the number of swaps
     for(let i = 0; i < arr.length; i++) {
         if(arr[i] !== 0) {
-            if(i!==index) {
+            if(i!==index) { // checking if both indexes are not same, if same, then point of doing swapping
                 [arr[i], arr[index]] = [arr[index], arr[i]] // Swapping
                 count++;
             }
@@ -40,8 +40,3 @@ console.log(moveZeroesToEnd([0,12,0,1,3]))
 console.log(moveZeroesToEnd([0,12,0,1,3, 4, 5, 1]))
 console.log(moveZeroesToEnd([0, 0, 0, 0,  2, 1]))
 console.log(moveZeroesToEnd([4, 2, 4, 0, 0, 0, 1, 0]))
-
-
-
-
-

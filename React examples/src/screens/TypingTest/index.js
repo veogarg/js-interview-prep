@@ -36,7 +36,7 @@ const TypingTest = () => {
               );
             })}
           </h3>
-          <input type="text" value={value} onChange={handleClick} />
+          <input type="text" value={value} onChange={handleClick} style={{border: "1px solid #000"}} />
         </div>
       </>
     );
