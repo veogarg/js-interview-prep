@@ -34,7 +34,7 @@ const printMyName = printName.bind(name1, "Delhi", "India"); // gives a copy of 
 console.log(printMyName)
 printMyName()
 
-const printMyName2 = printName.bind(name1); // gives a copy of the function that can be invoke later, bind with the provided object
+const printMyName2 = printName.bind(name1); // gives a copy of the function that can be invoke later, bind with the provided object 
 console.log(printMyName2)
 
 printMyName2("Delhi", "India")

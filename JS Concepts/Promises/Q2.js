@@ -45,6 +45,4 @@ const getInterval = (light) => {
     return 3000;
 }
 
-
-
 trafficLights();

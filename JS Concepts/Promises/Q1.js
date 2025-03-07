@@ -31,11 +31,11 @@ const retry = async (
       }
     }
   }
-  console.log(finalError);
+  return finalError
 };
 
 const mockAsyncFunction = async () => {
-  if (Math.random() > 0.7) {
+  if (Math.random() > 0.2) { 
     return "Success";
   } else {
     throw new Error("Random failure");

@@ -28,7 +28,7 @@ const p3 = new Promise((resolve, reject) => {
   }, 2000);
 });
 
-Promise.all([p1, p2, p3])
+Promise.all([p1, p2, p3]) // will return an array of all the promises if all the promises are resolved 
   .then((res) => {
     console.log(res);
   })
@@ -36,7 +36,7 @@ Promise.all([p1, p2, p3])
     console.error(err);
   });
 
-Promise.allSettled([p1, p2, p3])
+Promise.allSettled([p1, p2, p3]) // will return an array of all the promises if all the promises are resolved or rejected
   .then((res) => {
     console.log(res);
   })
@@ -44,7 +44,7 @@ Promise.allSettled([p1, p2, p3])
     console.error(err);
   });
 
-Promise.race([p1, p2, p3])
+Promise.race([p1, p2, p3]) // will return the first promise that is resolved or rejected
   .then((res) => {
     console.log(res);
   })
@@ -52,7 +52,7 @@ Promise.race([p1, p2, p3])
     console.error(err);
   });
 
-Promise.any([p1, p2, p3])
+Promise.any([p1, p2, p3]) // will return the first promise that is resolved otherwise it will return an array of all the promises that are rejected
   .then((res) => {
     console.log(res);
   })

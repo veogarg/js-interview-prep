@@ -7,7 +7,7 @@ function printName(hometown, country){
     console.log(`${this.firstName} ${this.lastname}, from ${hometown}, ${country}`)
 }
 const printMyName = printName.bind(name1, "Delhi", "India");
-// printMyName()
+printMyName()
 
 // Polyfill for bind method
 // Function.prototype.myBind = function(...args){

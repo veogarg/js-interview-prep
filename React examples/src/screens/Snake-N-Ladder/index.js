@@ -1,16 +1,15 @@
 import React, { useMemo, useState } from 'react'
 import "./style.css"
 
-const matrix = Array.from({length: 10}, () => {
-   return new Array(10).fill(0).map((_,i) => i+1)
+const matrix = Array.from({length: 10}, (_, row) => {
+   return new Array(10).fill(0).map((_,col) => row*10 + col + 1)
 })
 
 const initialPlayersObj = (numOfPlayers) => {
     const players = []
     Array(numOfPlayers).fill(0).forEach((_, index) => players.push({
         id: `Player ${index+1}`,
-        pos: 0,
-        coords: [0,0]
+        pos: 0
     }))
     return players; 
 }
@@ -99,7 +98,7 @@ const SnakeNLadder = ({numOfPlayers = 4}) => {
                     {
                         row.map((col, colIndex) => {
                             return <button key={`cell-${colIndex+1}`} className='cell'>
-                                {rowIndex * 10 + col}
+                                {col}
                             </button>
                         }) 
                     }
