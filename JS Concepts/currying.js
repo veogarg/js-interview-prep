@@ -1,3 +1,9 @@
+
+/**
+ * Currying is a technique in functional programming where a function takes multiple arguments one at a time.
+ * It transforms a function with multiple arguments into a sequence of functions with a single argument.
+ */
+
 let multiply = function (x, y) {
     console.log(x*y);
 }
@@ -28,7 +34,7 @@ mul2(2)(3);
  * eg: sum(1)(2)(3)(4)() = 10
  */
 
-// Implementation 1
+// Syntactically Implementation 1
 
 /* function sum(a){
     return function(b){
@@ -40,14 +46,14 @@ mul2(2)(3);
     }
 } */
 
-// Implementation 2
+// Syntactically Implementation 2
 /* const sum = (a) => {
     return (b) => {
         return b? sum(a+b):a
     }
 } */
 
-// Implementation 3
+// Syntactically Implementation 3
 const sum = (a) => (b) => b?sum(a+b):a
 
 console.log(sum(1)(2)(3)(4)(5)(6)())

@@ -1,35 +1,48 @@
 .snake-n-ladder {
-    display: grid;
-    grid-gap: 20px;
-    place-content: center;
+  display: grid;
+  gap: 20px;
+  place-content: center;
+  text-align: center;
 }
 
 .game-matrix {
-    display: flex;
-    gap: 0px;
-    flex-direction: column-reverse;
-    height: 500px;
-    width: 500px;
+  height: 500px;
+  width: 500px;
+  border: 2px solid #333;
 }
 
-.row-reverse {
-    display: flex;
-    flex-direction: row-reverse;
+.row, .row-reverse {
+  display: flex;
+  flex-direction: row-reverse;
 }
 
-button.cell {
-    height: 50px;
-    width: 50px;
-    border: 1px solid black;
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 50px;
+  width: 50px;
+  border: 1px solid #ccc;
+  font-size: 10px;
+  padding-top: 2px;
 }
 
-.action-button {
-    border: 1px solid black;
-    padding: 10px 20px;
+.players-inside {
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  display: flex;
+  gap: 2px;
+  flex-wrap: wrap;
 }
 
-.game-stats {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.player-token {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  font-size: 10px;
+  color: white;
+  text-align: center;
+  line-height: 12px;
 }

@@ -1,0 +1,35 @@
+.snake-n-ladder {
+    display: grid;
+    grid-gap: 20px;
+    place-content: center;
+}
+
+.game-matrix {
+    display: flex;
+    gap: 0px;
+    flex-direction: column-reverse;
+    height: 500px;
+    width: 500px;
+}
+
+.row-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+button.cell {
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+}
+
+.action-button {
+    border: 1px solid black;
+    padding: 10px 20px;
+}
+
+.game-stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
